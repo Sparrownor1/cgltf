@@ -6,11 +6,11 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y cmake clang
 
 ## Add source code to the build stage.
-ADD . /cgltf/fuzz
-WORKDIR /cgltf/fuzz
+ADD . /cgltf
+WORKDIR /cgltf
 
 ## TODO: ADD YOUR BUILD INSTRUCTIONS HERE.
-RUN rm -rf build && mkdir build && cd build/ && CC=clang CXX=clang++ cmake .. && make
+RUN cd fuzz && rm -rf build && mkdir build && cd build/ && CC=clang CXX=clang++ cmake .. && make
 
 # Package Stage
 FROM ubuntu:20.04
