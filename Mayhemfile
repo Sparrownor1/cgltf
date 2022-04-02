@@ -2,4 +2,4 @@ project: cgltf
 target: fuzzme
 
 cmds:
-  - cmh: fuzzme
+  - cmd: fuzzme
