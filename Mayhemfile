@@ -1,4 +1,4 @@
-project: cgltf
+project: Sparrownor1/cgltf
 target: fuzzme
 
 cmds:
