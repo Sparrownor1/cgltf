@@ -2,4 +2,4 @@ project: Sparrownor1/cgltf
 target: fuzzme
 
 cmds:
-  - cmd: fuzzme
+  - cmd: /fuzzme
