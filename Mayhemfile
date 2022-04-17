@@ -1,5 +1,5 @@
 project: Sparrownor1/cgltf
-target: fuzzme
+target: cgltf_parse
 
 cmds:
-  - cmd: /fuzzme
+  - cmd: /cgltf_parse

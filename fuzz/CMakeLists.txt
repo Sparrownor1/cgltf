@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(cgltf)
 
-add_executable(fuzzme main.c)
+add_executable(cgltf_parse main.c)
 
 ## Uncomment these lines after converting fuzzme.c into a libFuzzer target
 if (NOT CMAKE_CXX_COMPILER_ID STREQUAL "Clang")

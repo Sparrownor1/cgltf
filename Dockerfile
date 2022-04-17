@@ -16,4 +16,4 @@ RUN cd fuzz && rm -rf build && mkdir build && cd build/ && CC=clang CXX=clang++ 
 FROM ubuntu:20.04
 
 ## TODO: Change <Path in Builder Stage>
-COPY --from=builder /cgltf/fuzz/build/fuzzme /
+COPY --from=builder /cgltf/fuzz/build/cgltf_parse /
