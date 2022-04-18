@@ -7,6 +7,6 @@ add_executable(cgltf_parse main.c)
 if (NOT CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     message(FATAL_ERROR "Clang is required for libFuzzer!")
 endif()
-target_compile_options(fuzzme PUBLIC -fsanitize=fuzzer)
-target_link_options(fuzzme PUBLIC -fsanitize=fuzzer)
+target_compile_options(cgltf_parse PUBLIC -fsanitize=fuzzer)
+target_link_options(cgltf_parse PUBLIC -fsanitize=fuzzer)
 
